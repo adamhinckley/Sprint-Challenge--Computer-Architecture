@@ -71,9 +71,11 @@ void alu(struct cpu *cpu, enum alu_op op, unsigned char regA, unsigned char regB
       cpu->L = 1;
       break;
     }
+  //Modulo
   case ALU_MOD:
     cpu->registers[regA] %= cpu->registers[regB];
     break;
+  //Multiply
   case ALU_MUL:
     cpu->registers[regA] *= cpu->registers[regB];
     break;
@@ -83,12 +85,15 @@ void alu(struct cpu *cpu, enum alu_op op, unsigned char regA, unsigned char regB
   case ALU_OR:
     cpu->registers[regA] = cpu->registers[regA] | cpu->registers[regB];
     break;
+  // Shift Left
   case ALU_SHL:
     cpu->registers[regA] = cpu->registers[regA] << cpu->registers[regB];
     break;
+    //Shift right
   case ALU_SHR:
     cpu->registers[regA] = cpu->registers[regA] >> cpu->registers[regB];
     break;
+    //exclusive or
   case ALU_XOR:
     cpu->registers[regA] = cpu->registers[regA] ^ cpu->registers[regB];
     break;
@@ -215,7 +220,7 @@ void cpu_init(struct cpu *cpu)
   cpu->E = 0;
   cpu->L = 0;
   cpu->G = 0;
-  memset(cpu->ram, 0, 8 * sizeof(unsigned char));
-  memset(cpu->registers, 0, 256 * sizeof(unsigned char));
+  memset(cpu->ram, 0, sizeof(cpu->ram));
+  memset(cpu->registers, 0, sizeof(cpu->registers));
   cpu->registers[7] = 0XF4;
 }
