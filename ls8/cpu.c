@@ -25,7 +25,6 @@ void cpu_load(struct cpu *cpu, char *file)
   if ((fp = fopen(file, "r")) == NULL)
   {
     fprintf(stderr, "No file found\n");
-    // exit(1);
   }
 
   int address = 0;
