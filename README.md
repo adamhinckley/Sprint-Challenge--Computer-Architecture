@@ -1,3 +1,7 @@
+10110111
+
+256 + 64 + 32 + 8 + 4 + 2 = 366
+
 # Sprint Challenge: Computer Architecture - Conditional Jumps
 
 This challenge allows you to practice the concepts and techniques learned over
@@ -38,20 +42,20 @@ In this code challenge, you will add _conditional jumps_ (AKA _conditional branc
 
 Options for submission, whichever is easier for you:
 
-* Copy your source into this repo, or...
+-   Copy your source into this repo, or...
 
-* Submit a PR for the Sprint Challenge from the `Computer-Architecture` repo
-  you've been using all along (in addition to the PR for `ANSWERS.md`)
+-   Submit a PR for the Sprint Challenge from the `Computer-Architecture` repo
+    you've been using all along (in addition to the PR for `ANSWERS.md`)
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-- [ ] Add the `CMP` instruction and `equal` flag to your LS-8.
+-   [ ] Add the `CMP` instruction and `equal` flag to your LS-8.
 
-- [ ] Add the `JMP` instruction.
+-   [ ] Add the `JMP` instruction.
 
-- [ ] Add the `JEQ` and `JNE` instructions.
+-   [ ] Add the `JEQ` and `JNE` instructions.
 
 [See the LS-8 spec for details](https://github.com/LambdaSchool/Computer-Architecture/blob/master/LS8-spec.md)
 
@@ -168,7 +172,7 @@ goals may or may not be things you have learned in this module but they build on
 the material you just studied. Time allowing, stretch your limits and see if you
 can deliver on the following optional goals:
 
-- [ ] Add the ALU operations: `AND` `OR` `XOR` `NOT` `SHL` `SHR` `MOD`
-- [ ] Add an `ADDI` extension instruction to add an immediate value to a register
-- [ ] Add timer interrupts
-- [ ] Add keyboard interrupts
+-   [ ] Add the ALU operations: `AND` `OR` `XOR` `NOT` `SHL` `SHR` `MOD`
+-   [ ] Add an `ADDI` extension instruction to add an immediate value to a register
+-   [ ] Add timer interrupts
+-   [ ] Add keyboard interrupts
